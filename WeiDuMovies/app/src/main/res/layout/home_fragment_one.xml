@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141931">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:id="@+id/img_location"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_location"/>
+        <TextView
+            android:id="@+id/tv_location_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="广州市"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/img_location"/>
+        <ImageView
+            android:id="@+id/img_search"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_search"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linear_home_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/dp_164"
+            android:layout_height="@dimen/dp_164"
+            android:src="@mipmap/not_net"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_50"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/sp_14"
+            android:text="暂无网络"/>
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:id="@+id/sl_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#1C2243"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+                <ImageView
+                    android:id="@+id/img_athot"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@mipmap/hot_showing"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textColor="#FFFFFF"
+                    android:text="正在热映"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:layout_toRightOf="@id/img_athot"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:id="@+id/tv_more_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textColor="#FFFFFF"
+                    android:text="更多"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_search_athot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#1C2243"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+                <ImageView
+                    android:id="@+id/img_soon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@mipmap/coming_soon"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textColor="#FFFFFF"
+                    android:text="即将上映"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:layout_toRightOf="@id/img_soon"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:id="@+id/tv_more_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textColor="#FFFFFF"
+                    android:text="更多"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_search_soon"
+                android:layout_width="match_parent"
+                android:layout_height="420dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#1C2243"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+                <ImageView
+                    android:id="@+id/img_hot"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@mipmap/popular_movie"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textColor="#FFFFFF"
+                    android:text="热门电影"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:layout_toRightOf="@id/img_hot"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:id="@+id/tv_more_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textColor="#FFFFFF"
+                    android:text="更多"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_search_hot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_20"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

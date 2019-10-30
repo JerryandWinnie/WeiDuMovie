@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_hot_two"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_130"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tv_hot_score_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="9.6分"
+        android:textSize="@dimen/sp_12"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@id/img_hot_two"/>
+
+    <TextView
+        android:id="@+id/tv_hot_name_two"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_45"
+        android:textColor="#FFFFFF"
+        android:text="京剧猫"
+        android:textSize="@dimen/sp_14"
+        android:layout_margin="@dimen/dp_10"
+        android:layout_below="@id/img_hot_two"
+        android:layout_centerHorizontal="true"/>
+
+
+    <Button
+        android:id="@+id/btn_hot_two"
+        android:layout_width="@dimen/dp_45"
+        android:layout_height="@dimen/dp_30"
+        android:background="@drawable/button_shape"
+        android:text="购买"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/tv_hot_name_two"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

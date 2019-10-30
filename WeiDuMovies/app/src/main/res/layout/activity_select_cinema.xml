@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#141931"
+    tools:context=".view.activity.SelectCinemaActivity">
+
+    <com.bw.movie.view.view.TitleView
+        android:id="@+id/title_select_cinema"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_select_cinema"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:tabTextColor="#FFFFFF"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        android:background="#1C2243"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_select_cinema"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

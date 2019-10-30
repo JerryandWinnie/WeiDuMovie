@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_312"
+        android:layout_height="@dimen/dp_90"
+        android:background="#1C2243"
+        android:layout_margin="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/img_tui"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_70"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tv_tui_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_18"
+            android:textColor="#FFFFFF"
+            android:layout_toRightOf="@id/img_tui"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"/>
+
+        <TextView
+            android:id="@+id/tv_tui_addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_14"
+            android:textColor="#FFFFFF"
+            android:layout_toRightOf="@id/img_tui"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_55"/>
+    </RelativeLayout>
+
+</LinearLayout>

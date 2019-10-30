@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_hot_one"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/tv_hot_name_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="京剧猫"
+        android:textSize="@dimen/sp_14"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_alignBottom="@id/img_hot_one"/>
+
+    <TextView
+        android:id="@+id/tv_hot_score_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="9.6分"
+        android:textSize="@dimen/sp_12"
+        android:layout_toRightOf="@id/tv_hot_name_one"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_alignBottom="@id/img_hot_one"/>
+
+    <Button
+        android:id="@+id/btn_hot_one"
+        android:layout_width="@dimen/dp_45"
+        android:layout_height="@dimen/dp_30"
+        android:background="@drawable/button_shape"
+        android:text="购买"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/img_hot_one"/>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_schedule"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_100"
+        android:background="#1C2243"
+        android:layout_marginRight="@dimen/dp_10">
+        <TextView
+            android:id="@+id/tv_schedule_hall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_30"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/sp_18"
+            android:text="2号激光超清宽幕屛"/>
+        <TextView
+            android:id="@+id/tv_schedule_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_schedule_hall"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/sp_18"
+            android:text="14:40 --- 16:26"/>
+        <RadioButton
+            android:id="@+id/rb_schedule"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/select_schedule"
+            android:button="@null"/>
+    </RelativeLayout>
+
+</LinearLayout>

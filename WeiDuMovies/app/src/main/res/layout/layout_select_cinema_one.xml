@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141931">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_select_cinema_area"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#1C2243"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_select_cinema_addr"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:background="#1C2243"
+            android:layout_marginLeft="@dimen/dp_10"/>
+    </LinearLayout>
+
+</LinearLayout>
